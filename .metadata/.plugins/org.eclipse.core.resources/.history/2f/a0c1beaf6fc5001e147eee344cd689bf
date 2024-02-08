@@ -1,0 +1,23 @@
+package if_day03;
+
+import java.util.Scanner;
+
+public class Homework1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int grade;
+		int kor, eng, math;
+		int sum;
+		double avg;
+		System.out.print("학년 : ");
+		grade = sc.nextInt();
+		System.out.print("국어 : ");
+		kor = sc.nextInt();
+		System.out.print("영어 : ");
+		eng = sc.nextInt();
+		System.out.print("수학 : ");
+		math = sc.nextInt();
+	}
+
+}

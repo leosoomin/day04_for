@@ -1,0 +1,122 @@
+package if_day03;
+
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1, num2, num3;
+		System.out.print("세 수 입력 : ");
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		num3 = sc.nextInt();
+		
+		if(num1 > num2 && num1 > num3) 
+			System.out.println("num1이 제일 크다");
+		if(num1 > num2 && num1 < num3)
+			System.out.println("num3가 제일 크다");
+		if(num1 == num2 && num1 < num3)
+			System.out.println("num3가 제일 크다");
+		if(num1 == num2 && num1 > num3)
+			System.out.println("num1,num2가 제일 크다");
+		
+		if(num1 < num2 && num2 < num3)
+			System.out.println("num3가 제일 크다");
+		if(num1 < num2 && num2 > num3)
+			System.out.println("num2가 제일 크다");
+		if(num1 < num2 && num2 == num3)
+			System.out.println("num2,num3가 제일 크다");
+		if(num1 == num2 && num1 == num3)
+			System.out.println("num1 == num2 == num3");
+		
+		/*
+		int max = 0;
+	      if(num1 > num2) {
+	         max = num1;
+	      }
+	      if(num2 > num1) {
+	         max = num2;
+	      }
+	      if(num3 > max) {
+	         max = num3;
+	      }
+	      System.out.println("가장 큰 수 : "+max);
+	      
+	      Scanner input = new Scanner(System.in);
+	      int n1, n2, n3, max;
+	      System.out.println("수 입력");
+	      n1 = input.nextInt();
+	      n2 = input.nextInt();
+	      n3 = input.nextInt();
+	      String result1, result2;
+	      if(n1 > n2) {
+	         max = n1;
+	         result1 = "n1";
+	         result2 = "n2";
+	      }else {
+	         max = n2;
+	         result1 = "n2";
+	         result2 = "n1";
+	      }
+	      if( n3 > max) {
+	         System.out.println("n3가장 크다");
+	         System.out.println(result1+"두번째");
+	         System.out.println(result2+"세번째");
+	      }else {
+	         System.out.println(result1+"가장 크다");
+	         if(n2 > n1) {
+	            if(n1 >n3) {
+	               System.out.println("n1이 두번째");
+	               System.out.println("n3가 세번째");
+	            }else {
+	               System.out.println("n3이 두번째");
+	               System.out.println("n2가 세번째");
+	            }
+	         }else {
+	            if( n2 >n3) {
+	               System.out.println("n2이 두번째");
+	               System.out.println("n3가 세번째");
+	            }else {
+	               System.out.println("n3이 두번째");
+	               System.out.println("n2가 세번째");
+	            }
+	         }
+	      }
+	      /*
+	       
+	       
+	       /*
+	      if( n1 > n2 && n1 > n3) {
+	         System.out.println("n1이 가장 크다");
+	         if(n2 > n3) {
+	            System.out.println("n2 두번째");
+	            System.out.println("n3 세번째");
+	         }else {
+	            System.out.println("n3 두번째");
+	            System.out.println("n2 세번째");
+	         }
+	      }
+	      if( n2 > n1 && n2 > n3) {
+	         System.out.println("n2이 가장 크다");
+	         if(n1 > n3) {
+	            System.out.println("n1 두번째");
+	            System.out.println("n3 세번째");
+	         }else {
+	            System.out.println("n3 두번째");
+	            System.out.println("n1 세번째");
+	         }
+	      }
+	      if( n3 > n1 && n3 > n2) {
+	         System.out.println("n3이 가장 크다");
+	         if(n1 > n2) {
+	            System.out.println("n1 두번째");
+	            System.out.println("n2 세번째");
+	         }else {
+	            System.out.println("n2 두번째");
+	            System.out.println("n1 세번째");
+	         }
+	      }
+		*/
+	}
+}

@@ -1,0 +1,28 @@
+package if_day03;
+
+import java.util.Scanner;
+
+public class Quiz04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num;
+		num = sc.nextInt();
+		if(num % 3 ==0 && num % 4 == 0) {
+			System.out.println("3의 배수이면서, 4의 배수에도 해당합니다.");
+		}
+		if(num % 3 == 0 && num % 4 != 0) {
+			System.out.println("3의배수에만 해당합니다.");
+		}
+		if(num % 3 != 0 && num % 4 == 0) {
+			System.out.println("4의배수에만 해당합니다.");
+		}
+		if(num % 3 != 0 && num % 4 != 0) {
+			System.out.println("3의배수도, 4의배수도 해당안됩니다.");
+		}
+		if(num == 0) {
+			System.out.println("0은 잘못입력했습니다.");
+		}
+	}
+
+}

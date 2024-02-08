@@ -1,0 +1,25 @@
+package Quiz_2jo;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int score;
+			score = sc.nextInt();
+			while(true) {
+			if(score < 0 || score > 100) {
+				break;
+			}
+			else if(score >= 80) {
+				System.out.println("합격");
+			}
+			else {
+				System.out.println("불합격");
+			}
+			}
+
+	}
+
+}

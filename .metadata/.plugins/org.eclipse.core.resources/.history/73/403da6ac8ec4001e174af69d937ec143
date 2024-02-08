@@ -1,0 +1,16 @@
+package day02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// 상수 : 값에 대한 변경 x, 변수 : 값에 대한 변경 o
+		String korea = "대한민국";
+		System.out.println(korea);
+		korea = "미국";
+		System.out.println(korea);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Quiz_5jo;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i = 1;
+		int oddSum = 0;
+		while(oddSum < 10000) {
+			if(i % 2 != 0) {
+				oddSum += i;
+				i = i + 2;
+			}
+		}
+		System.out.println("홀 수의 합은 : " + oddSum);
+		System.out.println("합이 10000이 넘지 않는 마지막 홀수는 : " + i);
+
+	}
+
+}

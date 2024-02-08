@@ -1,0 +1,25 @@
+package Quiz_7jo;
+
+import java.util.Scanner;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		int a;
+		int b;
+		int n; 			// 트리의 줄 수
+		char s = '*';	// 별
+		char t = ' ';	// 공백
+		System.out.println("트리의 줄 수를 입력하시오 : ");
+		n = sc.nextInt();
+		for(b = n; b <= 1; b--) {
+			for(a = 1; a <= n; a++) {
+				System.out.print(t);
+				System.out.println(s);
+			}
+		}
+
+	}
+
+}

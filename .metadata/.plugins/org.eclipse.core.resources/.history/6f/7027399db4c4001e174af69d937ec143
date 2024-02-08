@@ -1,0 +1,18 @@
+package day02;
+
+import java.util.Scanner;
+
+public class Quiz04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int this_year, birth_year, age;
+		System.out.print("올해의 년도를 4자리로 입력하세요?");
+		this_year = sc.nextInt();
+		System.out.print("당신이 태어난 년도를 4자리로 입력하세요?");
+		birth_year = sc.nextInt();
+		age = this_year - birth_year + 1;
+		System.out.print("당신의 나이는 "+ age +"살 입니다.");
+	}
+
+}

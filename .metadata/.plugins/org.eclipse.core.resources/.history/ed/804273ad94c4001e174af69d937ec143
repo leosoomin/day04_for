@@ -1,0 +1,19 @@
+
+package day02;
+
+import java.util.Scanner;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);		// Scanner 사용할때는 import 해주고 옆에 한 줄 무조건 써줘야한다.
+		int num;
+		String name;
+		System.out.println("이름 입력 : ");
+		name = input.next();		// 문자열을 입력받을 때 사용하는 기능 next();
+		System.out.print("수 입력 : ");
+		num = input.nextInt();		// 정수만 입력받을 때 사용하는 기능  nextInt();
+
+	}
+
+}

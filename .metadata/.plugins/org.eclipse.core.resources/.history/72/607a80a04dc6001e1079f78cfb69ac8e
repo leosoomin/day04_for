@@ -1,0 +1,33 @@
+package Quiz_5jo;
+
+import java.util.Scanner;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int kor = 0, cnt = 0, tot_kor = 0, j = 1;
+		double avg_kor = 0;
+				
+		System.out.print("총 학생 수 : ");
+		cnt = input.nextInt();
+				
+		for (int i = 0 ; i < cnt ; i++) {
+					
+			System.out.print(j + "번 학생 국어 성적 : ");
+			kor = input.nextInt();
+					
+			if (kor <= 100 && kor > 0) {
+				tot_kor += kor;
+				j++;
+			}
+			else {
+				System.out.print(j + "번 학생 다시 입력해주세요 : ");
+				kor = input.nextInt();
+			}				
+		}
+		
+	}
+
+}

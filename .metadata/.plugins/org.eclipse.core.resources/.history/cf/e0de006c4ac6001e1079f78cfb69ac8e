@@ -1,0 +1,19 @@
+package Quiz_5jo;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		int a = 0;	// 백의자리
+		int b = 0;	// 십의자리
+		int c = 0;	// 일의자리
+	    int d = a * 100 + b + 10 + c;
+	    int e = a*a*a + b*b*b + c*c*c;
+		for(int i = 100; i <= 500; i++) {
+			if((d == e) && (d == i) ) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}

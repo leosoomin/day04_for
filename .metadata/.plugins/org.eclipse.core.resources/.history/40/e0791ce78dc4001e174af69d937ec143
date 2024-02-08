@@ -1,0 +1,15 @@
+package day02;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		char ch = 'A';
+		System.out.println( ch );
+		int num = ch;	// 자동형 변환(자료형의 크기가 작은 것을 큰 것으로 형 변환할때는 자동으로 변환이 가능하다. int : 4byte, char : 2byte)
+		System.out.println( num );
+		char ch02 = (char)num;	// 강제형 변환(자료형의 크기가 큰 것에서 작은 것으로 변환할 때)
+		System.out.println( ch02 );
+		
+	}
+
+}

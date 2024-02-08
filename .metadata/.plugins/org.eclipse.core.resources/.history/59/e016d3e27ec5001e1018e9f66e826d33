@@ -1,0 +1,54 @@
+package if_4jo;
+
+import java.util.Scanner;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String s1, s2, s3;
+		s1 = "가위"; s2 = "바위"; s3="보";
+		String a, b;
+		System.out.print("첫 번째 사람 가위 바위 보 입력 :");
+		a = sc.next();
+		System.out.print("두 번째 사람 가위 바위 보 입력 :");
+		b = sc.next();
+		
+		if((a != s1) || (a != s2) || (a != s3) || (b != s1) || (b != s2) || (b != s3)) {
+			System.out.println("잘못입력하셨습니다.");
+		}
+		else if(a == s1) {
+			if(b == s1) {
+				System.out.println("무승부");
+			}
+			if(b == s2) {
+				System.out.println("두번째 사람 승");
+			}
+			if(b == s3) {
+				System.out.println("첫번째 사람 승");
+			}
+		}
+		else if(a == s2) {
+			if(b == s2) {
+				System.out.println("무승부");
+			}
+			if(b == s3) {
+				System.out.println("두번째 사람 승");
+			}
+			if(b == s1) {
+				System.out.println("첫번째 사람 승");
+			}
+		}
+		else if(a == s3){
+			if(b == s3) {
+				System.out.println("무승부");
+			}
+			if(b == s1) {
+				System.out.println("두번째 사람 승");
+			}
+			if(b == s2) {
+				System.out.println("첫번째 사람 승");
+			}				
+		}
+	}
+}
